@@ -4,9 +4,11 @@ To iterate is human, to recurse divine.
 
 Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science.
 
-Here we compare the pure recursion, the memoization example prepared by  @RayHightower in his [post](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) and a tail-recursion implementation. Also we compare the Ruby and Elixir implementations of the tail-recursion.
+Here we compare the pure recursion, the memoization example prepared by  @RayHightower in his [post](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) and a tail-recursion implementation. Also we compare the [Ruby](https://www.ruby-lang.org/) and [Elixir](http://elixir-lang.org/) implementations of the tail-recursion.
 
 Tail-recursive functions are functions in which all recursive calls are tail calls and hence do not build up any deferred operations. The significance of tail recursion is that when making a tail-recursive call (or any tail call), the caller's return position need not be saved on the call stack; when the recursive call returns, it will branch directly on the previously saved return position. Therefore, in languages that recognize this property of tail calls, tail recursion saves both space and time.
+
+The [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) are use to illustrate these concepts in the code.
 
 #Requirements to run the code
 * **Ruby**.  For installation please follow these [instructions](https://www.ruby-lang.org/en/documentation/installation/)
@@ -21,11 +23,18 @@ Tail-recursive functions are functions in which all recursive calls are tail cal
 5. Compare the performance time
 6. In the console run `time elixir tail_recursion.ex`
 7. Compare the performance time
-8. Now the funny part. Edit the file `tail_recursion.rb` and change the number of Fibbonacci numbers to 5000. Save the change
+8. Now the funny part. Edit the file `tail_recursion.rb` and change the number of Fibonacci numbers to 5000. Save the change
 9. In the console run `time ruby tail_recursion.rb`
-10. Edit the file `tail_recursion.ex` and change the number of Fibbonacci numbers to 5000. Save the change
+10. Edit the file `tail_recursion.ex` and change the number of Fibonacci numbers to 5000. Save the change
 11. In the console run `time elixir tail_recursion.ex`
 12. Compare the performance time
+
+#References
+* [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion)
+* [MathWorld](http://mathworld.wolfram.com/Recursion.html)
+* [Recursion. H. James de St. Germain](http://www.cs.utah.edu/~germain/PPS/Topics/recursion.html)
+* [Cunningham & Cunningham, Wiki - Tail Recursion](http://c2.com/cgi/wiki?TailRecursion)
+* [Geeks for Geeks - Tail Recursion](http://www.geeksforgeeks.org/tail-recursion/)
 
 #License
 The MIT License (MIT)
