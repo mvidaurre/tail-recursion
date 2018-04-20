@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 To iterate is human, to recurse divine.  
 ~ L. Peter Deutsch
 
@@ -10,12 +10,12 @@ Tail-recursive functions are functions in which all recursive calls are tail cal
 
 The [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) are use to illustrate these concepts in the code.
 
-#Requirements to run the code
+# Requirements to run the code
 * **Ruby**.  For installation please follow these [instructions](https://www.ruby-lang.org/en/documentation/installation/)
 * **Elixir**.  For installation please follow these [instructions](http://elixir-lang.org/install.html/)
 * **time**. In Unix Systems the [time command](https://en.wikipedia.org/wiki/Time_(Unix)) is in the console, if you use windows you can use [this method](http://superuser.com/questions/228056/windows-equivalent-to-unix-time-command)
 
-#Running the code
+# Running the code
 1. In the console run `time ruby pure_recursion.rb`
 2. In the console run `time ruby memoization_recursion.rb`
 3. Compare the performance time
@@ -29,14 +29,14 @@ The [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) are use 
 11. In the console run `time elixir tail_recursion.ex`
 12. Compare the performance time
 
-#References
+# References
 * [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion)
 * [MathWorld](http://mathworld.wolfram.com/Recursion.html)
 * [Recursion. H. James de St. Germain](http://www.cs.utah.edu/~germain/PPS/Topics/recursion.html)
 * [Cunningham & Cunningham, Wiki - Tail Recursion](http://c2.com/cgi/wiki?TailRecursion)
 * [Geeks for Geeks - Tail Recursion](http://www.geeksforgeeks.org/tail-recursion/)
 
-#License
+# License
 The MIT License (MIT)
 
 Copyright (c) [2014] [Manuel Vidaurre]
